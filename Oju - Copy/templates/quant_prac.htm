@@ -1,0 +1,14 @@
+﻿<h1>PRACTICE QUANTITATIVE QUIZ</h1>
+<form action='/quant/quant_prac/score' method='POST' style="color:black;">
+    <ol>
+        {% for i in q %}
+            <li>{{i}} </li>
+            {% for j in o[i] %}
+                <input type='radio' value='{{j}}' name='{{i}}' />{{j}}
+                <br>
+            {% endfor %}
+            <br>
+        {% endfor %}
+    </ol>
+    <input type="submit" value="submit" >
+</form>

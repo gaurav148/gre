@@ -1,0 +1,14 @@
+<head>
+        <link rel="stylesheet" href= "{{ url_for('static', filename='css/ver.css') }}">
+</head>
+<body>
+{% extends "layout.html" %}
+{%  block content %}
+
+
+<ul>
+  <li><a class="btn" href="{{ url_for('quant_quiz') }}">QUANTITATIVE QUIZ</a></li>
+  <li><a class="btn" href="{{ url_for('quant_prac') }}">PRACTICE</a></li>
+</ul>
+{%  endblock content %}
+</body>
